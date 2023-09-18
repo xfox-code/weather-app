@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <main>
+      <section class="container" id="someId">
+        <div class="input-wrapper flex">
+          <input type="text" class="query-input input" placeholder="Query" />
+          <input type="text" class="city-input input" placeholder="City" />
+          <input
+            type="text"
+            class="country-input input"
+            placeholder="Country"
+          />
+          <button class="search-button input"><span class="material-symbols-outlined">
+            frame_inspect
+            </span></button>
+        </div>
+        <article class="weather-data-wrapper flex">
+          <p class="address-text"></p>
+          <div class="temp-text-wrapper flex flex-column flex-center"">
+            <p class="temp-text-info info">Todays Min Temperature</p>
+            <h3 class="weather-text-min">- °C</h3>
+          </div>
+          <div class="temp-text-wrapper flex flex-column flex-center">
+            <p class="temp-text-info info">Temperature Now</p>
+            <h1 class="weather-text-current">- °C</h1>
+          </div>
+          <div class="temp-text-wrapper flex flex-column flex-center">
+            <p class="temp-text-info info">Todays Max Temperature</p>
+            <h3 class="weather-text-max">- °C</h3>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
